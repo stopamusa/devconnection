@@ -13,10 +13,10 @@ const db = require("./config/keys").mongoURI;
 // Connect to MongoDB
 mongoose
   .connect(db)
-  .then(() => console.log("MongoDB connected.."))
+  .then(() => console.log("MongoDB connected...."))
   .catch(err => console.log(err));
 
-app.get("/", (req, res) => res.send("Hello World"));
+app.get("/", (req, res) => res.send("Hello World.."));
 
 // Use Routes
 app.use("/api/users", users);
